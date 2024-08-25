@@ -1,19 +1,29 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f1f1f1;
-    padding: 20px;
-    background-image: url('tkt.jpg');
+    padding: 0px;
+    margin: 0
+   
+}
+.back{
+    background-image: url("vande.jpeg");
     background-size: cover;
     background-position: center;
     height: 100vh;
+    margin: 0;
+    opacity: 90%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
 }
 
 .background-img {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.6); 
     padding: 20px;
-    border-radius: 10px;
-    max-width: 400px;
-    margin: 50px auto;
+    width: 100%;
+    max-width: 500px;
+    margin: 35px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
@@ -34,6 +44,7 @@ input[type="text"], input[type="date"], input[type="submit"] {
     border-radius: 5px;
 }
 
+
 input[type="submit"] {
     background-color: #4CAF50;
     color: white;
@@ -41,6 +52,7 @@ input[type="submit"] {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 400px;
 }
 
 input[type="submit"]:hover {
@@ -48,8 +60,10 @@ input[type="submit"]:hover {
 }
 
 #ticket-history {
-    margin-top: 20px;
-    background-color: #fff;
+    margin-top: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -60,7 +74,7 @@ input[type="submit"]:hover {
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: calc(100% - 20px);
+    width: 400px;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
@@ -95,3 +109,4 @@ input[type="submit"]:hover {
     padding: 5px 10px;
     cursor: pointer;
 }
+
