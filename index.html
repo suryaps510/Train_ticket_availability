@@ -1,47 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ticket Management System</title>
-<link rel="stylesheet" type="text/css" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket Management System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
 
-<div class="background-img">
-    <div class="ticket-section">
-        <form action="index.php" method="post" id="ticket-form">
+  <body>
+    <div class="back">
+      <div class="background-img">
+        <div class="ticket-section">
+          <form action="index.php" method="post" id="ticket-form">
             <h2>Ticket Management System</h2>
-            <input type="text" id="name" name="name" placeholder="Name" required><br>
-            <input type="text" id="seat" name="seat" placeholder="Seat No" required><br>
-            <input type="date" id="date" name="date" required><br>
-            <input type="text" id="from" name="from" placeholder="From Location" required><br>
-            <input type="text" id="to" name="to" placeholder="To Location" required><br>
-            <input type="submit" value="Book Ticket">
-        </form>
-        <button id="view-history-btn">View History</button>
-    </div>
-</div>
-<div id="ticket-history" style="display: none;">
-    <h3>Ticket History</h3>
-    <table id="history-table">
-        <thead>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            /><br />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            /><br />
+            <input
+              type="text"
+              id="seat"
+              name="seat"
+              placeholder="Seat No"
+              required
+            /><br />
+            <input type="date" id="date" name="date" placeholder="date" /><br />
+            <input
+              type="text"
+              id="from"
+              name="from"
+              placeholder="From Location"
+              required
+            /><br />
+            <input
+              type="text"
+              id="to"
+              name="to"
+              placeholder="To Location"
+              required
+            /><br />
+            <input type="submit" value="Book Ticket" class="sub" />
+          </form>
+          <button type="button" id="view-history-btn">View History</button>
+        </div>
+      </div>
+      <div id="ticket-history">
+        <h3>Ticket History</h3>
+        <table id="history-table">
+          <thead>
             <tr>
-                <th>Ticket ID</th>
-                <th>Name</th>
-                <th>Seat No</th>
-                <th>Date</th>
-                <th>From Location</th>
-                <th>To Location</th>
-                <th>Action</th>
+              <th>Ticket ID</th>
+              <th>Name</th>
+              <th>E-mail</th>
+              <th>Seat No</th>
+              <th>Date</th>
+              <th>From Location</th>
+              <th>To Location</th>
+              <th>Action</th>
             </tr>
-        </thead>
-        <tbody id="history-table-body">
+          </thead>
+          <tbody id="history-table-body">
             <!-- Ticket history rows will be dynamically added here -->
-        </tbody>
-    </table>
-</div>
+          </tbody>
+        </table>
+      </div>
+    </div>
 
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
+
